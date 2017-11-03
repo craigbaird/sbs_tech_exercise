@@ -1,19 +1,44 @@
 .formContainer {
-  margin: 30px;
-  width: 325px;
+  margin: 15px;
 }
-.originContainer {
+.formRow {
+  background-color: lightgrey;
+}
+/*.originContainer {
   margin-top: 30px;
   margin bottom: 15px;
   margin-left: 7px;
   margin-right: 7px;
-}
-.gridObjectContainer {
-  align-content: center;
-}
+}*/
+/*.gridObjectContainer {
+  margin-top: 15px;
+}*/
 .cargoReadyContainer {
   margin-top: 20px;
   width: 200px;
+}
+.cargoDates {
+  margin-top: 20px;
+  margin-left: 2px;
+  background-color: lightblue;
+  width: 160px;
+}
+#cargoReadyDate {
+  width: 160px;
+}
+#cargoDueDate {
+  width: 160px;
+}
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+.quoteContainer {
+  background-color: lightgrey;
+  padding-bottom: 20px;
+}
+.quote {
+  margin-left: 20px;
 }
 .logoContainer {
   margin: 30px;
@@ -35,10 +60,10 @@
 #cancelReqBtn {
   background-color: red;
 }
-
 td, tr, th {
-    border: 1px solid white;
+    border: 2px solid white;
     background-color: lightblue;
+    text-align: center;
 }
 table {
     border-collapse: collapse;
@@ -46,6 +71,9 @@ table {
 td, th {
     min-width: 80px;
     height: 50px;
+}
+td:hover {
+  background-color: yellow;
 }
 span {
     width: 100%;

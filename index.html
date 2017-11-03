@@ -16,9 +16,10 @@
 
   <body>
   <div class="container">
-    <div class="row">
+    <div class="row formRow">
 
-      <div class="col-6 col-md-4 formContainer originContainer">
+      <!-- <div class="col-6 col-md-4 formContainer originContainer"> -->
+      <div class="col-xs-10 col-sm-10 col-md-6 col-lg-3 col-xl-4 formContainer">
         <h2>Origin</h2>
 
         <div class="form-group row">
@@ -86,11 +87,12 @@
               </select>
         </div>
 
-      </div> <!-- end originContainer -->
+     </div>  <!-- end originContainer -->
 
 
 
-      <div class="col-6 col-md-4 formContainer destinationContainer">
+      <!-- <div class="col-6 col-md-4 formContainer destinationContainer"> -->
+      <div class="col-xs-10 col-sm-10 col-md-6 col-lg-3 col-xl-4 formContainer">
         <h2>Destination</h2>
 
         <div class="form-group row">
@@ -150,7 +152,8 @@
       </div> <!-- end destinationContainer -->
 
 
-      <div class="col-6 col-md-4 formContainer requesterContainer">
+      <!-- <div class="col-6 col-md-4 formContainer requesterContainer"> -->
+      <div class="col-xs-10 col-sm-10 col-md-6 col-lg-3 col-xl-4 formContainer">
         <h2>Requester</h2>
 
         <div class="form-group row">
@@ -186,15 +189,15 @@
       </div> <!-- end requesterContainer -->
 
     </div> <!-- end row -->
-  </div> <!-- end container -->
 
 
 
 
+      <!-- <div class="formContainer gridObjectContainer"> -->
       <div class="formContainer gridObjectContainer">
         <div class="row">
           <div class="col">
-           <table>
+            <table>
               <tbody>
                   <tr>
                       <th></th>
@@ -277,61 +280,70 @@
                       <td><span id="E9" contenteditable></span></td>
                   </tr>
               </tbody>
-          </table>
+            </table>
+          </div> <!-- end col -->
 
-        </div> <!-- end row -->
-      </div> <!-- end gridObjectContainer -->
 
-      <div class="container cargoReadyContainer">
-
-        <div class="form-group row">
+        <div class="form-group row cargoDates">
             <label for="" class="col-2 col-form-label">Cargo Ready Date</label>
-              <div class="col-10">
+              <div class="col">
                 <input class="form-control" id="cargoReadyDate" type="date">
               </div>
         </div>
-        <div class="form-group row">
+        <div class="form-group row cargoDates">
             <label for="" class="col-2 col-form-label">Cargo Due Date</label>
-              <div class="col-10">
+              <div class="col">
                 <input class="form-control" id="cargoDueDate" type="date">
               </div>
         </div>
 
-      </div> <!-- end cargoReadyContainer -->
-
+      </div> <!-- end row -->
+    </div> <!-- end gridObjectContainer -->
 
 
     <div class="formContainer quoteContainer">
+      <div class="row">
 
-      <h2>Quote Turnaround</h2>
-        <div class="radio">
-          <label><input type="radio" name="optradio">24 Hours</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="optradio">Standard (2hrs)</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="optradio">1 Hour</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="optradio">30 Minutes</label>
+        <div class="col-xs-10 col-sm-12 col-md-12 col-lg-4 col-xl-4 quote">
+          <h2>Quote Turnaround</h2>
+            <div class="radio">
+              <label><input type="radio" name="optradio">24 Hours</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">Standard (2hrs)</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">1 Hour</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">30 Minutes</label>
+            </div>
+
         </div>
 
-      <h2>Modes Quoted</h2>
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Truck</label>
+        <div class="col-xs-10 col-sm-12 col-md-12 col-lg-4 col-xl-4 quote">
+          <h2>Modes Quoted</h2>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Truck</label>
+            </div>
         </div>
 
-      <h2>Special Requests</h2>
-      <div class="form-group">
-        <label for="specialRequests">Comment:</label>
-        <textarea class="form-control" rows="5" id="specialRequests"></textarea>
+      </div> <!-- end row -->
+
+    <div class="row">
+      <div class="col-xs-10 col-sm-12 col-md-12 col-lg-4 col-xl-4 quote">
+        <h2>Special Requests</h2>
+        <div class="form-group">
+          <label for="specialRequests">Comment:</label>
+          <textarea class="form-control" rows="5" id="specialRequests"></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit" id="submitReqBtn">Submit Request</button>
+        <button class="btn btn-primary" id="saveDraftBtn">Save Draft</button>
+        <button class="btn btn-primary" id="cancelReqBtn">Cancel Request</button>
+
       </div>
-
-      <button class="btn btn-primary" type="submit" id="submitReqBtn">Submit Request</button>
-      <button class="btn btn-primary" id="saveDraftBtn">Save Draft</button>
-      <button class="btn btn-primary" id="cancelReqBtn">Cancel Request</button>
-
+    </div>
 
     </div> <!-- end quoteContainer -->
 
@@ -355,6 +367,8 @@
           <img class="logo keenLogo" src="assets/keen_logo.png">
         </div>
    </div>
+
+  </div> <!-- end container -->
 
  </body>
 </html>
