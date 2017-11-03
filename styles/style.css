@@ -1,8 +1,11 @@
 .formContainer {
-  margin: 15px;
+  margin: 20px;
+  border-radius: 10px;
 }
 .formRow {
-  background-color: lightgrey;
+  background-color: rgb(232, 232, 232);
+  border-radius: 10px;
+  margin: 20px;
 }
 /*.originContainer {
   margin-top: 30px;
@@ -12,9 +15,10 @@
 }*/
 /*.gridObjectContainer {
   margin-top: 15px;
+  margin-left: 10px;
 }*/
 .cargoReadyContainer {
-  margin-top: 20px;
+  margin: 20px;
   width: 200px;
 }
 .cargoDates {
@@ -34,14 +38,11 @@ input[type=date]::-webkit-inner-spin-button {
     display: none;
 }
 .quoteContainer {
-  background-color: lightgrey;
+  background-color: rgb(232, 232, 232);
   padding-bottom: 20px;
 }
 .quote {
   margin-left: 20px;
-}
-.logoContainer {
-  margin: 30px;
 }
 .logo {
   height: 200px;

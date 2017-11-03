@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title></title>
+    <title>Vodigy</title>
 
+    <!-- favicon -->
+    <link rel=icon href=assets/Vodigy.png>
     <!-- stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
@@ -17,8 +19,6 @@
   <body>
   <div class="container">
     <div class="row formRow">
-
-      <!-- <div class="col-6 col-md-4 formContainer originContainer"> -->
       <div class="col-xs-10 col-sm-10 col-md-6 col-lg-3 col-xl-4 formContainer">
         <h2>Origin</h2>
 
@@ -90,8 +90,6 @@
      </div>  <!-- end originContainer -->
 
 
-
-      <!-- <div class="col-6 col-md-4 formContainer destinationContainer"> -->
       <div class="col-xs-10 col-sm-10 col-md-6 col-lg-3 col-xl-4 formContainer">
         <h2>Destination</h2>
 
@@ -152,7 +150,6 @@
       </div> <!-- end destinationContainer -->
 
 
-      <!-- <div class="col-6 col-md-4 formContainer requesterContainer"> -->
       <div class="col-xs-10 col-sm-10 col-md-6 col-lg-3 col-xl-4 formContainer">
         <h2>Requester</h2>
 
@@ -283,7 +280,7 @@
             </table>
           </div> <!-- end col -->
 
-
+        <div class="col">
         <div class="form-group row cargoDates">
             <label for="" class="col-2 col-form-label">Cargo Ready Date</label>
               <div class="col">
@@ -295,6 +292,7 @@
               <div class="col">
                 <input class="form-control" id="cargoDueDate" type="date">
               </div>
+        </div>
         </div>
 
       </div> <!-- end row -->
@@ -318,7 +316,6 @@
             <div class="radio">
               <label><input type="radio" name="optradio">30 Minutes</label>
             </div>
-
         </div>
 
         <div class="col-xs-10 col-sm-12 col-md-12 col-lg-4 col-xl-4 quote">
@@ -337,7 +334,6 @@
           <label for="specialRequests">Comment:</label>
           <textarea class="form-control" rows="5" id="specialRequests"></textarea>
         </div>
-
         <button class="btn btn-primary" type="submit" id="submitReqBtn">Submit Request</button>
         <button class="btn btn-primary" id="saveDraftBtn">Save Draft</button>
         <button class="btn btn-primary" id="cancelReqBtn">Cancel Request</button>
@@ -348,25 +344,26 @@
     </div> <!-- end quoteContainer -->
 
 
-    <div class="logoContainer">
-      <h2>Participating Providers</h2>
-      <p>(click to select)</p>
-        <div class="row">
-          <img class="logo sbsGroupLogo" src="assets/sbs_logo.png">
-        </div>
-        <div class="row">
-          <img class="logo avengLogo" src="assets/aveng_logo.png">
-        </div>
-        <div class="row">
-          <img class="logo tortorigiLogo" src="assets/tortorigi_logo.png">
-        </div>
-        <div class="row">
-          <img class="logo gresLogo" src="assets/gres_logo.png">
-        </div>
-        <div class="row">
-          <img class="logo keenLogo" src="assets/keen_logo.png">
-        </div>
-   </div>
+      <div class="row">
+          <h2>Participating Providers</h2>
+          <p><b>(click to select)</b></p>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+              <img class="logo sbsGroupLogo" src="assets/sbs_logo.png">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+              <img class="logo avengLogo" src="assets/aveng_logo.png">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+              <img class="logo tortorigiLogo" src="assets/tortorigi_logo.png">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+              <img class="logo gresLogo" src="assets/gres_logo.png">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+              <img class="logo keenLogo" src="assets/keen_logo.png">
+            </div>
+       </div>
+    </div> <!-- end row -->
 
   </div> <!-- end container -->
 
