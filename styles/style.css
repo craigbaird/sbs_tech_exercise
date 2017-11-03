@@ -1,0 +1,53 @@
+.formContainer {
+  margin: 30px;
+  width: 325px;
+}
+.originContainer {
+  margin-top: 30px;
+  margin bottom: 15px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.gridObjectContainer {
+  align-content: center;
+}
+.cargoReadyContainer {
+  margin-top: 20px;
+  width: 200px;
+}
+.logoContainer {
+  margin: 30px;
+}
+.logo {
+  height: 200px;
+  width: 200px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.btn.btn-primary {
+  border: none;
+  margin: 5px;
+}
+#submitReqBtn {
+  background-color: green;
+}
+#cancelReqBtn {
+  background-color: red;
+}
+
+td, tr, th {
+    border: 1px solid white;
+    background-color: lightblue;
+}
+table {
+    border-collapse: collapse;
+}
+td, th {
+    min-width: 80px;
+    height: 50px;
+}
+span {
+    width: 100%;
+    display: block;
+}
